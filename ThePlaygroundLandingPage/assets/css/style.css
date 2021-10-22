@@ -1,0 +1,344 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #1a2b5f;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1210px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* ----- Header ----- */
+.header {
+  padding-top: 4rem;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.header__menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.header__menu-item {
+  margin-left: 5rem;
+}
+.header__menu-item:last-child {
+  margin-left: 7rem;
+}
+.header__menu-link {
+  font-size: 1.6rem;
+  color: #1a2b5f;
+  transition: color 0.2s linear, border 0.2s linear;
+}
+.header__menu-link:hover {
+  color: #ffc87a;
+}
+.header__login {
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  border: 1px solid;
+  border-radius: 2.5rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #1a2b5f;
+}
+.logo__text {
+  color: #ffc87a;
+}
+
+/* ----- Banner ----- */
+.banner {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+  max-width: 70rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner__heading {
+  font-weight: 800;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+.banner__desc {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3rem;
+  margin-bottom: 4rem;
+  padding: 0 5rem;
+}
+.banner__buttons {
+  display: flex;
+  justify-content: center;
+}
+.banner__buttons .btn {
+  margin: 0 1rem;
+}
+
+.btn {
+  cursor: pointer;
+  outline: none;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #1a2b5f;
+  padding: 1.5rem 3rem;
+  display: inline-block;
+  border: 0;
+  background-color: transparent;
+}
+.btn--border {
+  border: 1px solid currentColor;
+}
+.btn--rounded {
+  border-radius: 5rem;
+}
+.btn--primary {
+  background-color: #ffc87a;
+}
+.btn--primary.has-shadow {
+  box-shadow: 0 10px 35px -5px #ffc87a;
+}
+
+.category__list {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.category__item {
+  width: calc(25% - 22.5px);
+  padding: 3rem;
+  border-radius: 3rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+.category__item:first-child {
+  box-shadow: 0 20px 35px -5px rgba(255, 151, 195, 0.25);
+}
+.category__item:nth-child(2) {
+  box-shadow: 0 20px 35px -5px rgba(255, 112, 109, 0.25);
+}
+.category__item:nth-child(3) {
+  box-shadow: 0 20px 35px -5px rgba(133, 152, 255, 0.25);
+}
+.category__item:last-child {
+  box-shadow: 0 20px 35px -5px rgba(255, 200, 122, 0.25);
+}
+.category__img {
+  width: 100%;
+  height: 23rem;
+  object-fit: cover;
+  margin-bottom: 4rem;
+}
+.category__name, .category__details {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.category__name {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.category__details {
+  font-size: 1.4rem;
+  color: #8d95af;
+  margin-top: auto;
+}
+.category__details i {
+  margin-left: 1.2rem;
+}
+
+.feature {
+  padding-top: 15rem;
+}
+.feature__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+.feature__item:nth-child(odd) .feature__info {
+  padding-left: 10rem;
+}
+.feature__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.feature__item:nth-child(even) .feature__info {
+  padding-right: 10rem;
+}
+.feature__image, .feature__info {
+  width: 50%;
+}
+.feature__image {
+  object-fit: cover;
+}
+.feature__title {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 6rem;
+  margin-bottom: 2.5rem;
+  max-width: 45rem;
+}
+.feature__desc {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  margin-bottom: 4rem;
+}
+.feature-intro__list {
+  margin-bottom: 5rem;
+}
+.feature-intro__item {
+  font-weight: 600;
+  margin-bottom: 3rem;
+  text-decoration: underline;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.feature-intro__item--circle {
+  text-decoration: none;
+  position: relative;
+  padding-left: 3rem;
+}
+.feature-intro__item--circle:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 4rem;
+  background-color: #ffc87a;
+  transform: translateY(-50%);
+}
+.feature-intro__item--circle:nth-child(2)::before {
+  background-color: #ff706d;
+}
+.feature-intro__item--circle:nth-child(3)::before {
+  background-color: #8598ff;
+}
+.feature-intro__item--circle:last-child:before {
+  background-color: #ff97c3;
+}
+.feature-best__icon {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 16px;
+  font-size: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  margin-bottom: 1rem;
+  color: #ffc87a;
+  position: relative;
+  z-index: 1;
+}
+.feature-best__icon--pink {
+  color: #ff97c3;
+}
+.feature-best__icon--blue {
+  color: #8598ff;
+}
+.feature-best__icon--green {
+  color: #98C379;
+}
+.feature-best__icon:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: currentColor;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.feature-best__title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.6rem;
+  max-width: 16rem;
+  margin-bottom: 1rem;
+}
+.feature-best__desc {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 300;
+}
+.feature-best__list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: -5rem;
+}
+.feature-best__item {
+  width: calc(50% - 3rem);
+  margin-bottom: 4rem;
+}
+
+.text-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+.text-clamp--2 {
+  -webkit-line-clamp: 2;
+}
+.text-clamp--3 {
+  -webkit-line-clamp: 3;
+}
+
+/*# sourceMappingURL=style.css.map */
